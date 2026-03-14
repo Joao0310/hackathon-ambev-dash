@@ -29,7 +29,7 @@ export default function TransferCostChart() {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="custo" fill="#f59e0b" />
+          <Bar dataKey="custo" fill="#f5c518" />
         </BarChart>
       </ResponsiveContainer>
     </ChartContainer>

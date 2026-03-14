@@ -1,4 +1,4 @@
-import Layout from "./components/Layout/Layout";
+import Layout from "./components/layout/Layout";
 import Overview from "./pages/Overview/Overview";
 import Logistica from "./pages/logistica/Logistica";
 import Custo from "./pages/custo/Custo";

@@ -1,17 +1,18 @@
-import { Card, Title, Value } from "./KpiCard.styles";
-
+import { Card, Label, Value, Sub } from "./KpiCard.styles";
+ 
 type Props = {
   title: string;
   value: string | number;
-  color?: string;
+  sub?: string;
+  accent?: string;
 };
-
-export default function KpiCard({ title, value, color }: Props) {
+ 
+export default function KpiCard({ title, value, sub, accent }: Props) {
   return (
-    <Card>
-      <Title>{title}</Title>
-      <Value style={{ color }}>{value}</Value>
-      
+    <Card $accent={accent}>
+      <Label>{title}</Label>
+      <Value>{value}</Value>
+      {sub && <Sub>{sub}</Sub>}
     </Card>
   );
 }
